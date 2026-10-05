@@ -1,0 +1,51 @@
+{
+    "name": "tyhpdef/aws-aws-sdk-php-impl",
+    "description": "Implementation package for tyhpdef/aws-aws-sdk-php. Require tyhpdef/aws-aws-sdk-php, not this package.",
+    "keywords": [
+        "dev",
+        "static analysis",
+        "internal"
+    ],
+    "type": "library",
+    "license": "Apache-2.0",
+    "version": "3.395.3.0",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "tyhp": {
+            "interopContractVersion": 1,
+            "php-version": ">=8.2",
+            "require": {
+                "tyhpdef/php": "@dev",
+                "tyhpdef/guzzlehttp-promises": "@dev",
+                "tyhpdef/psr-http-message": "@dev",
+                "tyhpdef/guzzlehttp-guzzle": "@dev",
+                "tyhpdef/guzzlehttp-psr7": "@dev",
+                "tyhpdef/mtdowling-jmespath.php": "@dev"
+            },
+            "package": {
+                "include": [
+                    "./_tyhpdef/*.tyhpdef",
+                    "./_tyhpdef/extensions/*.tyhpdef"
+                ],
+                "overlay": [
+                    "./_tyhpdef/overlays/stubs/*.tyhpdef",
+                    "./_tyhpdef/overlays/*.tyhpdef"
+                ]
+            },
+            "public": "tyhpdef/aws-aws-sdk-php"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "aws/aws-sdk-php": "3.395.3"
+    },
+    "require-dev": {
+        "tyhpdef/php": "@dev",
+        "tyhpdef/guzzlehttp-promises": "@dev",
+        "tyhpdef/psr-http-message": "@dev",
+        "tyhpdef/guzzlehttp-guzzle": "@dev",
+        "tyhpdef/guzzlehttp-psr7": "@dev",
+        "tyhpdef/mtdowling-jmespath.php": "@dev"
+    }
+}
